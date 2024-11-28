@@ -1,0 +1,13 @@
+{
+  "enabledManagers": ["custom.jsonata"],
+  "customManagers": [
+     {
+      "customType": "jsonata",
+      "fileMatch": ["package.json"],
+      "matchQueries": [
+        "{ \"depName\": \"pnpm\", \"currentValue\": packageManager,  \"depType\": \"packageManager\"}"
+      ],
+      "datasourceTemplate": "npm"
+    }
+  ]
+}
