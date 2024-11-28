@@ -5,7 +5,7 @@
       "customType": "jsonata",
       "fileMatch": ["package.json"],
       "matchQueries": [
-        "{ \"depName\": \"pnpm\", \"currentValue\": packageManager,  \"depType\": \"packageManager\"}"
+        "{ \"depName\": \"pnpm\", \"currentValue\": $substring(packageManager, 5),  \"depType\": \"packageManager\"}"
       ],
       "datasourceTemplate": "npm"
     }
